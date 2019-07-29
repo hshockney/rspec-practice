@@ -32,7 +32,20 @@ let(:b) {3}
             expect(c).not_to equal(d)
             expect(c).not_to equal([1,2,3])
         end
+            let(:num) { 10 }
+           
+        it 'is a test of your knowledge' do
+            expect(num).to be >= 10
+            expect(num).to be < 15
+            expect(num).to be <= 11
+            expect(num).to be > 9
+        end
 
     end
 
 end
+
+#eq checks for value
+#eql checks for value and type
+#equal checks for object identity
+#be is same as equal
