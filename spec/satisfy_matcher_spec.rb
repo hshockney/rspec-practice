@@ -4,7 +4,7 @@ RSpec.describe "satisfy matcher" do
         expect(subject).to satisfy { |value| value == value.reverse }
     end
      it ' can except a custom error message' do
-        expect(sunject).to satisfy('be a palindrome') do |value|
+        expect(subject).to satisfy('be a palindrome') do |value|
             value == value.reverse
         end
     end
